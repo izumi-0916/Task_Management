@@ -1,0 +1,74 @@
+body{
+  font-family: Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;  
+}
+
+.wrapper{
+  background-color: #FFFF99;
+  height: 100vh;
+  width: 100vw;
+}
+
+.header{
+  height: 50px;
+  background-color: #333;
+  width: 100vw;
+  color: #fff;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+.title{
+  text-align: center;
+  margin-top: 70px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.task-box{
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 70px;
+  background-color: #fff;
+  border-bottom: 1px solid gray;
+}
+
+.box-title{
+  height: 30px;
+  line-height: 30px;
+  background-color: #66CC66;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.task-header{
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  display: flex;
+}
+
+.task-name{
+  width: 450px;
+  padding-left: 10px;
+}
+
+.task-date{
+  width: 250px;
+}
+
+.task{
+  height: 40px;
+  line-height: 40px;
+  display: flex;
+  border-top: 1px solid gray;
+}
+
+.no-task{
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-top: 1px solid gray;
+}
