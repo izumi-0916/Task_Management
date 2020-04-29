@@ -7,9 +7,11 @@
 </head>
 <body>
   <div class="wrapper">
-    <a class="home" href="/"><div class="header">タスク管理アプリ</div></a>
+  <a class="home" href="{{ url('/')}} "><div class="header">タスク管理アプリ</div></a>
     <div class="content">
       <div class="title">タスク管理</div>
+      <div class="btn-link">
+        <a class="btn" href="{{ url('/posts/create')}} ">新規作成</a>      </div>
       <div class="task-box">
         <div class="box-title">タスク一覧</div>
         <div class="task-header">

@@ -7,9 +7,12 @@
 </head>
 <body>
   <div class="wrapper">
-    <a class="home" href="/"><div class="header">タスク管理アプリ</div></a>
+    <a class="home" href="{{ url('/')}} "><div class="header">タスク管理アプリ</div></a>
     <div class="content">
       <div class="title">タスク管理</div>
+      <div class="btn-link">
+        <a class="btn" href="{{ url('/')}} ">戻る</a>      </div>
+      <div class="task-box">
       <div class="s-task-box">
         <div class="left">
           <div class="left-title">課題</div>

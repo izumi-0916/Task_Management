@@ -11,7 +11,7 @@ body{
 
 .wrapper{
   background-color: #FFFF99;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -30,15 +30,39 @@ body{
 
 .title{
   text-align: center;
-  margin-top: 70px;
+  margin-top: 50px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.btn-link {
+  text-align: center;
+  margin-top: 40px;
+}
+.btn{
+  display: inline-block;
+  width: 180px;
+  height:50px;
+  text-align: center;
+  background-color: green;
+  font-size: 16px;
+  line-height: 50px;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid green;
+}
+
+.btn:hover{
+  color: green;
+  background-color: #fff;
+  transition: 0.3s;
 }
 
 .task-box{
   width: 700px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 50px;
   background-color: #fff;
   border-bottom: 1px solid gray;
 }
@@ -99,7 +123,7 @@ body{
 .s-task-box{
   width: 700px;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 50px;
   display: flex;
   background-color: #fff;
 }
@@ -137,6 +161,7 @@ body{
 
 .comment-box{
   width: 250px;
+  overflow-y: scroll;
 }
 
 .comment-title{
@@ -148,6 +173,7 @@ body{
 .c-box{
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .comment {
@@ -174,4 +200,43 @@ body{
   font-size: 20px;
   margin-left: 5px;
   color: gray;
+}
+
+.form{
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+input[type="text"], textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  height: 50px;
+  font-size: 18px;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type="submit"]{
+  font-size: 16px;
+  width:150px;
+  height:50px;
+  background-color: #66CC66;
+  margin: auto;
+  margin-top: 24px;
+  border-radius: 5px;
+  color: #ffffff;
+  line-height: 50px;
+  font-weight:bolder;
+  display: block;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  box-shadow: 0 10px 15px -5px rgba(0,0,0,.15),0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-3px);
+  transition: 0.3s;
 }
