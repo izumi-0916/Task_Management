@@ -11,8 +11,12 @@
     <div class="content">
       <div class="title">タスク管理</div>
       <div class="btn-link">
-        <a class="btn" href="{{ url('/')}} ">戻る</a>      </div>
-      <div class="task-box">
+        <a class="btn" href="{{ url('/')}} ">戻る</a>
+      </div>
+      <div class="btn-box">
+        <a href="{{ action('PostsController@edit', $post) }}" class="edit-link">編集</a>
+        <a href="{{ action('PostsController@show', $post) }}" class="delete-link">削除</a>
+      </div>
       <div class="s-task-box">
         <div class="left">
           <div class="left-title">課題</div>
