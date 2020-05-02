@@ -15,7 +15,11 @@
       </div>
       <div class="btn-box">
         <a href="{{ action('PostsController@edit', $post) }}" class="edit-link">編集</a>
-        <a href="{{ action('PostsController@show', $post) }}" class="delete-link">削除</a>
+        <a href="#" class="delete-link" data-id="{{ $post->id }}">削除</a>
+        <form method="post" action="{{ url('/posts', $post->id) }}" id="form_{{ $post->id }}">
+          {{ csrf_field() }}
+          {{ method_field('delete') }}
+        </form>
       </div>
       <div class="s-task-box">
         <div class="left">
@@ -37,5 +41,6 @@
       </div>
     </div>
   </div>
+<script src="/js/main.js"></script>
 </body>
 </html>
