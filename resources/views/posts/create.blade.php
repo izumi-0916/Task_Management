@@ -16,7 +16,7 @@
         <form method="post" action="{{ url('/posts') }}">
           {{ csrf_field() }}
           <p>
-            <input type="text" name="title" placeholder="タスクを入力" value="{{ old('title') }}">
+            <input class="text-form" type="text" name="title" placeholder="タスクを入力" value="{{ old('title') }}">
             @if ($errors->has('title'))
             <span class="error">{{ $errors->first('title') }}</span>
             @endif
@@ -25,7 +25,7 @@
             <textarea name="text" placeholder="一言入力">{{ old('text') }}</textarea>
           </p>
           <p>
-            <input type="submit" value="作成">
+            <input class="submit" type="submit" value="作成">
           </p>
         </form>
       </div>

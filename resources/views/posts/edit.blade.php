@@ -17,7 +17,7 @@
           {{ csrf_field() }}
           {{ method_field('patch') }}
           <p>
-            <input type="text" name="title" placeholder="タスクを入力" value="{{ old('title', $post->title) }}">
+            <input class="text-form" type="text" name="title" placeholder="タスクを入力" value="{{ old('title', $post->title) }}">
             @if ($errors->has('title'))
             <span class="error">{{ $errors->first('title') }}</span>
             @endif
@@ -26,7 +26,7 @@
             <textarea name="text" placeholder="一言入力">{{ old('text', $post->text) }}</textarea>
           </p>
           <p>
-            <input type="submit" value="編集">
+            <input class="submit" type="submit" value="編集">
           </p>
         </form>
       </div>

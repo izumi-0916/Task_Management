@@ -31,14 +31,32 @@
         </div>
         <div class="comment-box">
           <div class="comment-title">コメント</div>
+          @foreach ($post->comments as $comment)
           <div class="c-box">
             <div class="comment">
-              <p>コメント</p>
+              <p>{{ $comment->body }}</p>
             </div>
-            <div class="delete">×</div>
+            <a href="#" class="delete" data-id="{{ $comment->id }}">×</a>
+            <form method="post" action="{{ action('CommentsController@destroy', [$post, $comment]) }}" id="form_{{ $comment->id }}">
+              {{ csrf_field() }}
+              {{ method_field('delete') }}
+            </form>
           </div>
-        </div>
+          @endforeach
+          </div>
       </div>
+      <form method="post" action="{{ action('CommentsController@store', $post) }}">
+        {{ csrf_field() }}
+        <p class="c-new-form">
+          <input class="comment-new" type="text" name="body" placeholder="コメントを入力" value="{{ old('body') }}">
+          @if ($errors->has('body'))
+          <span class="error">{{ $errors->first('body') }}</span>
+          @endif
+        </p>
+        <p>
+          <input class="c-submit" type="submit" value="コメント">
+        </p>
+      </form>
     </div>
   </div>
 <script src="/js/main.js"></script>
