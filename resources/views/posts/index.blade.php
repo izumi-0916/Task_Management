@@ -7,7 +7,9 @@
 </head>
 <body>
   <div class="wrapper">
-  <a class="home" href="{{ url('/')}} "><div class="header">タスク管理アプリ</div></a>
+    <div class="header">
+      <a class="home" href="{{ url('/')}} ">タスク管理アプリ</a>
+    </div>
     <div class="content">
       <div class="title">タスク管理</div>
       <div class="btn-link">

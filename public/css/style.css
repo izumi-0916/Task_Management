@@ -26,6 +26,11 @@ body{
 
 .home{
   text-decoration: none;
+  color: #fff;
+}
+
+.home:hover{
+  text-decoration: underline;
 }
 
 .title{
